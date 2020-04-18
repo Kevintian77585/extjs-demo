@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <--引入extjs样式文件-->
+    <link rel="stylesheet" type="text/css" href="ext/classic/theme-triton/resources/theme-triton-all.css">
+
+    <--引入extjs核心库-->
+    <script src="ext/ext-all.js"></script>
+
+    <script>
+        //在Ext框架初始化完成后才执行方法
+        Ext.onReady(function () {
+            //创建grid panel
+            Ext.create('Ext.grid.Panel',{
+                title:'用户管理',
+                height:700,
+                renderTo:Ext.getBody()
+            })
+        })
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

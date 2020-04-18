@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <--引入extjs样式文件-->
+    <link rel="stylesheet" type="text/css" href="ext/classic/theme-triton/resources/theme-triton-all.css">
+
+    <--引入extjs核心库-->
+    <script src="ext/ext-all.js"></script>
+
+    <script>
+        //在Ext框架初始化完成后才执行方法
+        Ext.onReady(function () {
+            //提示框
+            /*Ext.MessageBox.alert('温馨提示', 'hello world', function () {
+                console.log("你是真的皮")
+            })*/
+            //创建面板对象(方法一)
+            var panel = new Ext.panel.Panel({
+                width:300,
+                height:400,
+                title:'标题',
+                html:'hello',
+                //必须进行渲染才会显示
+                renderTo:Ext.getBody()
+            })
+            //创建面板对象(方法二)
+            Ext.create('Ext.panel.Panel',{
+                width:300,
+                height:400,
+                title:'标题',
+                html:'world',
+                //必须进行渲染才会显示
+                renderTo:Ext.getBody()
+            })
+            //创建面板对象(方法三)
+           var panel3 = Ext.create({
+                xtype:'panel',
+                width:300,
+                height:400,
+                title:'标题',
+                html:'world',
+                //必须进行渲染才会显示
+                /*renderTo:Ext.getBody()*/
+            })
+            panel3.render(Ext.getBody())
+        })
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
