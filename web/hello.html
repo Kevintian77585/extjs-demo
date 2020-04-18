@@ -19,29 +19,29 @@
             })*/
             //创建面板对象(方法一)
             var panel = new Ext.panel.Panel({
-                width:300,
-                height:400,
-                title:'标题',
-                html:'hello',
+                width: 300,
+                height: 400,
+                title: '标题',
+                html: 'hello',
                 //必须进行渲染才会显示
-                renderTo:Ext.getBody()
+                renderTo: Ext.getBody()
             })
             //创建面板对象(方法二)
-            Ext.create('Ext.panel.Panel',{
-                width:300,
-                height:400,
-                title:'标题',
-                html:'world',
+            Ext.create('Ext.panel.Panel', {
+                width: 300,
+                height: 400,
+                title: '标题',
+                html: 'world',
                 //必须进行渲染才会显示
-                renderTo:Ext.getBody()
+                renderTo: Ext.getBody()
             })
             //创建面板对象(方法三)
-           var panel3 = Ext.create({
-                xtype:'panel',
-                width:300,
-                height:400,
-                title:'标题',
-                html:'world',
+            var panel3 = Ext.create({
+                xtype: 'panel',
+                width: 300,
+                height: 400,
+                title: '标题',
+                html: 'world',
                 //必须进行渲染才会显示
                 /*renderTo:Ext.getBody()*/
             })
@@ -51,6 +51,6 @@
     </script>
 </head>
 <body>
-    <div id="test">测试提交代码回退至本地</div>
+<h1>回滚代码只回滚本地得代码测试</h1>
 </body>
 </html>
