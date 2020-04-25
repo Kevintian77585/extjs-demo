@@ -6,6 +6,10 @@ import java.io.FileFilter;
 public class FilefilterImpl implements FileFilter {
     @Override
     public boolean accept(File pathname) {
-        return true;
+        //System.out.println(pathname.getName());
+        if (pathname.isDirectory()) {
+            return true;
+        }
+        return pathname.getName().toLowerCase().endsWith(".doc");
     }
 }
